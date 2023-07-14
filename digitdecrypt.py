@@ -43,7 +43,13 @@ class Solution:
             while len(num)>index:
                 total = int(num[index])+total
                 index = index +1
-            return total
+            total = str(total)
+            fun = 0
+            index = 0 
+            while len(total)>index:
+                fun = int(total[index])+fun
+                index = index +1
+            return fun
             
  
 def main():
